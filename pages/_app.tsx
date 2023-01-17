@@ -30,7 +30,6 @@ export default function MyApp(props) {
 				build upon. */}
 				
 				<CssBaseline />
-                <Navbar/>
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</CacheProvider>
