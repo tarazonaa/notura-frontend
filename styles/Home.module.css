@@ -276,3 +276,97 @@
     transform: rotate(0deg);
   }
 }
+
+.btn {
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  background-color:rgb(250, 86, 135);
+  border-color: rgb(250, 86, 135);
+  float:left;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin: 31px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+}  
+.header {
+  background-color: rgb(26,173,175);
+  text-align: center;
+  height: 100px;
+  font-family: 'Linik Sans', sans-serif;
+  font-size: large;
+  color: white;
+  padding-top: 25px;
+  text-shadow: 1px 1px 2px #ffffff;
+  font-weight: 800;
+}
+
+.vivo {
+background-color:rgb(250, 86, 135);
+border-color: rgb(250, 86, 135);
+color: rgb(255, 255, 255);
+border-radius: 5px;
+float:left;
+height: 40px;
+width: 180px;
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 400;
+font-size: larger;
+margin-left: 225px;
+margin-top: 25px;
+}
+
+.clases {
+background-color:rgb(250, 86, 135);
+border-color: rgb(250, 86, 135);
+color: rgb(255, 255, 255);
+border-radius: 5px;
+float:left;
+height: 40px;
+width: 180px;
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 400;
+font-size: larger;
+margin-left: 50px;
+margin-top: 25px;
+}
+
+.prof {
+background-color:rgb(255, 255, 255);
+border-color: rgb(250, 86, 135);
+color: rgb(0, 0, 0);
+border-radius: 20px;
+float:left;
+height: 40px;
+width: 180px;
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 200;
+font-size: larger;
+}
+.Escuelas {
+background-color:rgb(255, 255, 255);
+border-color: rgb(250, 86, 135);
+color: rgb(0, 0, 0);
+border-radius: 20px;
+float:left;
+height: 40px;
+width: 180px;
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 200;
+font-size: larger;
+margin-left: 50px;
+margin-top: auto;
+}
+.menu2 {
+padding: 100px;
+padding-left: 175px;
+padding-bottom:100px;
+}
+.instrumentos {
+padding-top:0px;
+}
+
