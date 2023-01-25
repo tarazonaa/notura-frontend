@@ -283,26 +283,29 @@
   background-color:rgb(250, 86, 135);
   border-color: rgb(250, 86, 135);
   float:left;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   margin: 0 auto;
-  margin: 31px;
+  margin: 40px;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   font-size: x-large;
   letter-spacing: 1px;
-  margin-bottom: 1px;
+  margin-bottom: 50;
+  cursor: pointer;
 }  
 .header {
   background-color: rgb(26,173,175);
   text-align: center;
   height: 100px;
   font-family: 'Linik Sans', sans-serif;
-  font-size: large;
+  font-size:xx-large;
   color: white;
-  padding-top: 25px;
   text-shadow: 1px 1px 2px #ffffff;
   font-weight: 800;
+  padding-top: 25px;
+  margin-top: -0.0000000000001px;
+  font-weight: 900;
 }
 
 .vivo {
@@ -316,8 +319,9 @@ width: 180px;
 font-family: 'Nunito Sans', sans-serif;
 font-weight: 400;
 font-size: larger;
-margin-left: 225px;
+margin-left: 50px;
 margin-top: 25px;
+cursor: pointer;
 }
 
 .clases {
@@ -333,11 +337,12 @@ font-weight: 400;
 font-size: larger;
 margin-left: 50px;
 margin-top: 25px;
+cursor: pointer;
 }
 
 .prof {
 background-color:rgb(255, 255, 255);
-border-color: rgb(250, 86, 135);
+border-color: rgb(175, 175, 175);
 color: rgb(0, 0, 0);
 border-radius: 20px;
 float:left;
@@ -346,27 +351,31 @@ width: 180px;
 font-family: 'Nunito Sans', sans-serif;
 font-weight: 200;
 font-size: larger;
+cursor: pointer;
 }
 .Escuelas {
-background-color:rgb(255, 255, 255);
-border-color: rgb(250, 86, 135);
-color: rgb(0, 0, 0);
-border-radius: 20px;
-float:left;
-height: 40px;
-width: 180px;
-font-family: 'Nunito Sans', sans-serif;
-font-weight: 200;
-font-size: larger;
-margin-left: 50px;
-margin-top: auto;
+  background-color:rgb(255, 255, 255);
+  border-color: rgb(250, 86, 135);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  float:left;
+  height: 40px;
+  width: 180px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+  font-size: larger;
+  margin-left: 50px;
+  margin-top: auto;
+  cursor: pointer;
 }
 .menu2 {
 padding: 100px;
-padding-left: 175px;
+padding-left: 0px;
 padding-bottom:100px;
 }
 .instrumentos {
-padding-top:0px;
+padding-top: 0px;
+margin-bottom: 70px;
 }
+
 
