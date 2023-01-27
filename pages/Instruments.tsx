@@ -1,14 +1,15 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Instruments() {
+  const [data, setData] = useState([]);
   const [selectedLiveMusicButton, setSelectedLiveMusicButton] =
     useState("classes");
-  const [selectedClassesButton, setSelectedClassesButton] = useState("schools"); // <-- update initial state
+  const [selectedClassesButton, setSelectedClassesButton] = useState("schools"); 
   const liveMusicButtonStyle = {
     opacity: selectedLiveMusicButton === "liveMusic" ? 1 : 0.5,
   };
@@ -18,15 +19,22 @@ export default function Instruments() {
   const teachersButtonStyle = {
     borderColor:
       selectedClassesButton === "schools"
-        ? "rgb(250, 86, 135)" // <-- update color
-        : "rgb(171, 171, 171)", // <-- update color
+        ? "rgb(250, 86, 135)" 
+        : "rgb(171, 171, 171)", 
   };
   const schoolsButtonStyle = {
     borderColor:
       selectedClassesButton === "teachers"
-        ? "rgb(250, 86, 135)" // <-- update color
-        : "rgb(171, 171, 171)", // <-- update color
+        ? "rgb(250, 86, 135)" 
+        : "rgb(171, 171, 171)", 
   };
+  
+useEffect(() => {
+  fetch("http://localhost:8000/lessons/instruments")
+  .then((response) => response.json())
+  .then((response) => setData(response.data))
+  .catch((error) => console.log(error));
+}), [];
 
   return (
     <div>
@@ -71,7 +79,7 @@ export default function Instruments() {
           <div className={styles.sleccionclasses}>
             <button
               className={styles.Escuelas}
-              onClick={() => setSelectedClassesButton("teachers")}
+              onClick={() => setSelectedClassesButton("schools")}
               style={teachersButtonStyle}
             >
               Profesores
@@ -79,7 +87,7 @@ export default function Instruments() {
 
             <button
               className={styles.Escuelas}
-              onClick={() => setSelectedClassesButton("schools")}
+              onClick={() => setSelectedClassesButton("teachers")}
               style={schoolsButtonStyle}
             >
               Escuelas
@@ -88,16 +96,11 @@ export default function Instruments() {
         </section>
         <div>
           <div className={styles.instrumentos}>
-            <button className={styles.btn}>Guitarra Acustica</button>
-            <button className={styles.btn}>Bateria</button>
-            <button className={styles.btn}>Teclado</button>
-            <button className={styles.btn}>Guitarra Electrica</button>
-            <button className={styles.btn}>Ukelele</button>
-            <button className={styles.btn}>Canto</button>
-            <button className={styles.btn}>Bajo</button>
-            <button className={styles.btn}>Saxofón</button>
-            <button className={styles.btn}>Piano</button>
-            <button className={styles.btn}>Otros</button>
+            {
+              data.map((item) => (
+                <button className={styles.btn}> {item["name"]} </button>
+              ))
+            }
           </div>
         </div>
       </main>
