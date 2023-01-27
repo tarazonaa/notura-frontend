@@ -6,21 +6,26 @@ import { useState } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Instruments() {
-  const [selectedPair1Button, setSelectedPair1Button] = useState("");
-  const [selectedPair2Button, setSelectedPair2Button] = useState("");
-  const button1Style = { opacity: selectedPair1Button === "button2" ? 0.5 : 1 };
-  const button2Style = { opacity: selectedPair1Button === "button1" ? 0.5 : 1 };
-  const button3Style = {
-    borderColor:
-      selectedPair2Button === "button4"
-        ? "rgb(171, 171, 171)"
-        : "rgb(250, 86, 135)",
+  const [selectedLiveMusicButton, setSelectedLiveMusicButton] =
+    useState("classes");
+  const [selectedClassesButton, setSelectedClassesButton] = useState("schools"); // <-- update initial state
+  const liveMusicButtonStyle = {
+    opacity: selectedLiveMusicButton === "liveMusic" ? 1 : 0.5,
   };
-  const button4Style = {
+  const classesButtonStyle = {
+    opacity: selectedLiveMusicButton === "classes" ? 1 : 0.5,
+  };
+  const teachersButtonStyle = {
     borderColor:
-      selectedPair2Button === "button3"
-        ? "rgb(171, 171, 171)"
-        : "rgb(250, 86, 135)",
+      selectedClassesButton === "schools"
+        ? "rgb(250, 86, 135)" // <-- update color
+        : "rgb(171, 171, 171)", // <-- update color
+  };
+  const schoolsButtonStyle = {
+    borderColor:
+      selectedClassesButton === "teachers"
+        ? "rgb(250, 86, 135)" // <-- update color
+        : "rgb(171, 171, 171)", // <-- update color
   };
 
   return (
@@ -50,37 +55,39 @@ export default function Instruments() {
           <div>
             <button
               className={styles.vivo}
-              onClick={() => setSelectedPair1Button("button1")}
-              style={button1Style}
+              onClick={() => setSelectedLiveMusicButton("liveMusic")}
+              style={liveMusicButtonStyle}
             >
               Música en Vivo
             </button>
             <button
-              className={styles.clases}
-              onClick={() => setSelectedPair1Button("button2")}
-              style={button2Style}
+              className={styles.vivo}
+              onClick={() => setSelectedLiveMusicButton("classes")}
+              style={classesButtonStyle}
             >
               Clases
             </button>
           </div>
-          <div className={styles.menu2}>
+          <div className={styles.sleccionclasses}>
             <button
               className={styles.Escuelas}
-              onClick={() => setSelectedPair2Button("button4")}
-              style={button4Style}
+              onClick={() => setSelectedClassesButton("teachers")}
+              style={teachersButtonStyle}
             >
               Profesores
             </button>
+
             <button
               className={styles.Escuelas}
-              onClick={() => setSelectedPair2Button("button3")}
-              style={button3Style}
+              onClick={() => setSelectedClassesButton("schools")}
+              style={schoolsButtonStyle}
             >
               Escuelas
             </button>
           </div>
+        </section>
+        <div>
           <div className={styles.instrumentos}>
-           
             <button className={styles.btn}>Guitarra Acustica</button>
             <button className={styles.btn}>Bateria</button>
             <button className={styles.btn}>Teclado</button>
@@ -92,8 +99,7 @@ export default function Instruments() {
             <button className={styles.btn}>Piano</button>
             <button className={styles.btn}>Otros</button>
           </div>
-          <div></div>
-        </section>
+        </div>
       </main>
     </div>
   );

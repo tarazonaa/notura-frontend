@@ -282,18 +282,16 @@
   border-radius: 25px;
   background-color:rgb(250, 86, 135);
   border-color: rgb(250, 86, 135);
-  float:left;
   height: 180px;
   width: 180px;
   margin: 0 auto;
   margin: 40px;
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
   font-size: x-large;
   letter-spacing: 1px;
   margin-bottom: 50;
   cursor: pointer;
-}  
+} 
 .header {
   background-color: rgb(26,173,175);
   text-align: center;
@@ -302,10 +300,8 @@
   font-size:xx-large;
   color: white;
   text-shadow: 1px 1px 2px #ffffff;
-  font-weight: 800;
   padding-top: 25px;
   margin-top: -0.0000000000001px;
-  font-weight: 900;
 }
 
 .vivo {
@@ -317,64 +313,32 @@ float:left;
 height: 40px;
 width: 180px;
 font-family: 'Nunito Sans', sans-serif;
-font-weight: 400;
 font-size: larger;
 margin-left: 50px;
 margin-top: 25px;
 cursor: pointer;
 }
 
-.clases {
-background-color:rgb(250, 86, 135);
-border-color: rgb(250, 86, 135);
-color: rgb(255, 255, 255);
-border-radius: 5px;
-float:left;
-height: 40px;
-width: 180px;
-font-family: 'Nunito Sans', sans-serif;
-font-weight: 400;
-font-size: larger;
-margin-left: 50px;
-margin-top: 25px;
-cursor: pointer;
-}
-
-.prof {
-background-color:rgb(255, 255, 255);
-border-color: rgb(175, 175, 175);
-color: rgb(0, 0, 0);
-border-radius: 20px;
-float:left;
-height: 40px;
-width: 180px;
-font-family: 'Nunito Sans', sans-serif;
-font-weight: 200;
-font-size: larger;
-cursor: pointer;
-}
 .Escuelas {
   background-color:rgb(255, 255, 255);
   border-color: rgb(250, 86, 135);
   color: rgb(0, 0, 0);
   border-radius: 20px;
-  float:left;
   height: 40px;
   width: 180px;
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 200;
   font-size: larger;
   margin-left: 50px;
   margin-top: auto;
   cursor: pointer;
 }
-.menu2 {
+
+.sleccionclasses {
 padding: 100px;
 padding-left: 0px;
 padding-bottom:100px;
 }
 .instrumentos {
-padding-top: 0px;
 margin-bottom: 70px;
 }
 
