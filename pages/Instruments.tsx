@@ -78,7 +78,7 @@ useEffect(() => {
           </div>
           <div className={styles.sleccionclasses}>
             <button
-              className={styles.Escuelas}
+              className={styles.escuelas}
               onClick={() => setSelectedClassesButton("schools")}
               style={teachersButtonStyle}
             >
@@ -86,7 +86,7 @@ useEffect(() => {
             </button>
 
             <button
-              className={styles.Escuelas}
+              className={styles.escuelas}
               onClick={() => setSelectedClassesButton("teachers")}
               style={schoolsButtonStyle}
             >
