@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
+import NavBar from "./components/NavBar"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,11 +54,8 @@ useEffect(() => {
           href="https://fonts.googleapis.com/css2?family=Linik+Sans:wght@800&display=swap"
           rel="stylesheet"
         ></link>
-        <title> Instrumentos-Notura </title>
+        <title> Instrumentos </title>
       </Head>
-      <h1 className={styles.header}>
-        <strong>Notura</strong>
-      </h1>
       <main>
         <section>
           <div>
